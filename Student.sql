@@ -1,5 +1,5 @@
 INSERT INTO `DataTest`.`Student`
-(`idStudent`,
+(`Studentid`,
 `Name`,
 `Surname`)
 VALUES
