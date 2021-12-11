@@ -7,7 +7,7 @@ mysql_select_db('DataTest');
 
 if (isset($_POST['submit']) && $_POST['submit'] == 'updateStudent') {
     $updateStudentDetailsQuery = "UPDATE Student_details SET Student_id='$_POST[Student_id]', Student_surname='$_POST[Student_surname]', Student_name='$_POST[Student_name'] WHERE Student_id='$_POST[hidden]'";
-    $StudentRecords =mysql_query($Student);
+    $StudentRecords =mysql_query($StudentQuery);
 
 }
 
