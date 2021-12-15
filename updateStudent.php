@@ -12,34 +12,34 @@ class Students {
   
     // Methods
 
-    function set_studentid($studentid) {
-        $this->studentid = $studentid;
+    function set_Studentid($Studentid) {
+        $this->Student_id = $Studentid;
       }
-      function get_studentid() {
-        return $this->studentid;
+      function get_Student_id() {
+        return $this->Student_id;
       }
 
-    function set_name($name) {
-      $this->name = $name;
+    function set_Student_name($Studentname) {
+      $this->set_Student_name = $Studentname;
     }
-    function get_name() {
-      return $this->name;
+    function get_Student_name() {
+      return $this->set_Student_name;
     }
 
-    function set_surname($surname) {
-        $this->name = $surname;
+    function set_Student_surname ($Surname) {
+        $this->Surname = $currentSurname;
       }
-      function get_surname() {
-        return $this->surename;
+      function get_Student_surname () {
+        return $this->Surename;
       }
   }
   
-  $studentid = new Student();
-  $name = new Student();
-  $surname = new Student();
+  $Studentid = new Student();
+  $Studentname = new Student();
+  $Surname = new Student();
   $studentid->set_id('0001')
-  $name->set_name('Ian');
-  $surname->set_surname('Browm');
+  $name->set_Student_name('Ian');
+  $surname->set_Student_surname ('Browm');
   
 
 
