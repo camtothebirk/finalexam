@@ -4,10 +4,48 @@ $con = mysql_connect('localhost', 'root', 'password');
 
 mysql_select_db('DataTest');
 
+class Students {
+    // Properties
+    public $studentid;
+    public $name;
+    public $surname;
+  
+    // Methods
+
+    function set_studentid($studentid) {
+        $this->studentid = $studentid;
+      }
+      function get_studentid() {
+        return $this->studentid;
+      }
+
+    function set_name($name) {
+      $this->name = $name;
+    }
+    function get_name() {
+      return $this->name;
+    }
+
+    function set_surname($surname) {
+        $this->name = $surname;
+      }
+      function get_surname() {
+        return $this->surename;
+      }
+  }
+  
+  $studentid = new Student();
+  $name = new Student();
+  $surname = new Student();
+  $studentid->set_id('0001')
+  $name->set_name('Ian');
+  $surname->set_surname('Browm');
+  
+
 
 if (isset($_POST['submit']) && $_POST['submit'] == 'updateStudent') {
     $updateStudentDetailsQuery = "UPDATE Student_details SET Student_id='$_POST[Student_id]', Student_surname='$_POST[Student_surname]', Student_name='$_POST[Student_name'] WHERE Student_id='$_POST[hidden]'";
-    $StudentRecords =mysql_query($StudentQuery);
+    $StudentRecords =mysql_query($Student);
 
 }
 
