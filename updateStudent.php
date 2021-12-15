@@ -5,12 +5,10 @@ $con = mysql_connect('localhost', 'root', 'password');
 mysql_select_db('DataTest');
 
 class Students {
-    // Properties
     public $studentid;
     public $name;
     public $surname;
   
-    // Methods
 
     function set_Student_id($Studentid) {
         $this->Student_id = $Studentid;
