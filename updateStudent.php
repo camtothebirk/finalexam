@@ -12,7 +12,7 @@ class Students {
   
     // Methods
 
-    function set_Studentid($Studentid) {
+    function set_Student_id($Studentid) {
         $this->Student_id = $Studentid;
       }
       function get_Student_id() {
